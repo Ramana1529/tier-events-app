@@ -1,5 +1,5 @@
 import { ClerkProvider } from "@clerk/nextjs";
-import Header from "./component/Header"
+import Header from "./component/header";
 import "./globals.css";
 
 export const metadata = {
@@ -10,6 +10,10 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
+        <body>
+          <Header />
+          <main className="p-6">{children}</main>
+        </body>
         <body>
           <Header />
           <main className="p-6">{children}</main>
