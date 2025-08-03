@@ -44,11 +44,6 @@ export default function EventsPage() {
     <div className="p-6">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-3xl font-bold">Upcoming Events</h1>
-        <SignOutButton>
-          <button className="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">
-            Sign Out
-          </button>
-        </SignOutButton>
       </div>
 
       {loading ? (
