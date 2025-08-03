@@ -14,10 +14,6 @@ export default function RootLayout({ children }) {
           <Header />
           <main className="p-6">{children}</main>
         </body>
-        <body>
-          <Header />
-          <main className="p-6">{children}</main>
-        </body>
       </html>
     </ClerkProvider>
   );
